@@ -1,6 +1,6 @@
 let  arr=[1,2,4,6,9,3,8,1];
 
-function NearestGreaterElementOnLeft(arr){
+function NearestSmallerElementOnLeft(arr){
   let stack=[];
   let res=new Array(arr.length);
   res[0]=-1;
@@ -9,9 +9,10 @@ function NearestGreaterElementOnLeft(arr){
      while(stack.length!==0&&arr[stack[stack.length-1]]>arr[i]){
        stack.pop();
      }
-    res[i]=!stack.length===0?arr[stack[stack.length-1]]:-1
+    res[i]=stack.length!==0?arr[stack[stack.length-1]]:-1
     stack.push(i);
   }
   return res
 }
-console.log(NearestGreaterElementOnLeft(arr))
+console.log(NearestSmallerElementOnLeft(arr))
+//NearestSmallestElementOnLeft.js
