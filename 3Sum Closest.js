@@ -1,7 +1,7 @@
 var threeSumClosest = function(num, t) {
      let sorted=num.sort((a,b)=>a-b);
    
- let res=[]
+ //let res=[]
  let min=Infinity;
 for(let i=0;i<sorted.length-2;i++){
   if(i>0&&sorted[i]===sorted[i-1])continue;
