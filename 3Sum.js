@@ -9,7 +9,7 @@ for(let i=0;i<num.length;i++){
     let j=i+1;
     let k=num.length-1;
     let sum=0
-    while(j<k){
+    while(j<k){ 
         sum=sorted[i]+sorted[j]+sorted[k];
         if(sum===0){
             res.push([sorted[i],sorted[j],sorted[k]])
