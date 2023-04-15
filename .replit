@@ -19,7 +19,7 @@ message = "We see that you are using require(...) inside your code. We currently
 channel = "stable-22_11"
 
 [env]
-XDG_CONFIG_HOME = "/home/runner/$REPL_SLUG/.config"
+XDG_CONFIG_HOME = "/home/runner/.config"
 PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
 npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
 
@@ -84,6 +84,3 @@ pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
 
 [languages.javascript.languageServer]
 start = "typescript-language-server --stdio"
-
-[deployment]
-run = ["sh", "-c", "node index.js"]
